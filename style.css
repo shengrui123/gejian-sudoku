@@ -24,7 +24,7 @@
 .theme-picker>span{font-size:18px;line-height:1}
 .theme-picker select{font:inherit;font-size:11px;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:7px 5px;cursor:pointer;max-width:110px}
 .theme-picker select:focus-visible{outline:3px solid #bd9c5c;outline-offset:3px}
-:root[data-theme="dark"]{--bg:#000000;--paper:#0b0b0b;--ink:#ededed;--muted:#c5c5c5;--green:#383838;--line:#303030;--soft:#252525}
+:root[data-theme="dark"]{--bg:#000000;--paper:#0b0b0b;--ink:#fafafa;--muted:#dddddd;--green:#4a4a4a;--line:#505050;--soft:#252525}
 :root[data-theme="dark"] :is(.icon-button,.pause,.difficulty button,.mode-switch button,.mode-label,.game-meta,.board-bottom,.tools button,.tools button>span,.keyboard-tip,footer,footer button,.close,dialog p){color:var(--muted)}
 :root[data-theme="dark"] :is(.eyebrow,.edition,.edition span,.quote,.quote>span,.quote>div,.tiny-grid,.meta-dot){color:#b7b7b7}
 :root[data-theme="dark"] h1 em{color:#dedede}
@@ -32,21 +32,21 @@
 :root[data-theme="dark"] .difficulty{background:#080808}
 :root[data-theme="dark"] .difficulty button.active{background:#333333;color:#ededed;box-shadow:none}
 :root[data-theme="dark"] #level-name{color:#d4d4d4}
-:root[data-theme="dark"] #board{background:#686868;border-color:#686868}
-:root[data-theme="dark"] .cell{background:var(--paper);border-color:#333333}
-:root[data-theme="dark"] .cell:nth-child(3n){border-right-color:#626262}
-:root[data-theme="dark"] .cell:nth-child(n+19):nth-child(-n+27),:root[data-theme="dark"] .cell:nth-child(n+46):nth-child(-n+54){border-bottom-color:#626262}
+:root[data-theme="dark"] #board{background:#bdbdbd;border-color:#bdbdbd}
+:root[data-theme="dark"] .cell{background:#050505;border-color:#666666}
+:root[data-theme="dark"] .cell:nth-child(3n){border-right-color:#bdbdbd}
+:root[data-theme="dark"] .cell:nth-child(n+19):nth-child(-n+27),:root[data-theme="dark"] .cell:nth-child(n+46):nth-child(-n+54){border-bottom-color:#bdbdbd}
 :root[data-theme="dark"] .cell.related{background:#181818}
-:root[data-theme="dark"] .cell.same{background:#242424}
-:root[data-theme="dark"] .cell.selected{background:#303030;box-shadow:inset 0 0 0 2px #888888}
-:root[data-theme="dark"] .cell.user{color:#d4e2ef}
-:root[data-theme="dark"] .cell.error{color:#f0b5ae;background:#342525}
-:root[data-theme="dark"] .cell .notes-grid{color:#d2d2d2}
+:root[data-theme="dark"] .cell.same{background:#2b2b2b}
+:root[data-theme="dark"] .cell.selected{background:#363636;box-shadow:inset 0 0 0 2px #f0f0f0}
+:root[data-theme="dark"] .cell.user{color:#c8e5ff;font-weight:600}
+:root[data-theme="dark"] .cell.error{color:#ffc6bd;background:#361c1c}
+:root[data-theme="dark"] .cell .notes-grid{color:#eeeeee;font-weight:600}
 :root[data-theme="dark"] .progress{background:#292929}
 :root[data-theme="dark"] :is(.tools button.active,.mode-switch button.active){background:#333333;color:#ededed}
 :root[data-theme="dark"] .tools small{background:#292929;border-color:#404040;color:#d0d0d0}
-:root[data-theme="dark"] .number{background:#171717;border-color:#363636;color:#ededed}
-:root[data-theme="dark"] .number small{color:#bdbdbd}
+:root[data-theme="dark"] .number{background:#1b1b1b;border-color:#777777;color:#fafafa}
+:root[data-theme="dark"] .number small{color:#dddddd}
 :root[data-theme="dark"] .number:disabled{opacity:.45}
 :root[data-theme="dark"] .daily-card{background:#101010;border-color:#333333}
 :root[data-theme="dark"] :is(.daily-icon,.daily-card p,.tag,.arrow,.daily-footer){color:#c8c8c8}
@@ -56,12 +56,12 @@
 :root[data-theme="dark"] dialog::backdrop{background:#000000b3}
 :root[data-theme="dark"] .secondary{background:#333333;color:var(--ink)}
 :root[data-theme="dark"] .win-symbol{color:#d0d0d0}
-:root[data-theme="dark"] .killer-info{background:#171717;color:#d5d5d5}
+:root[data-theme="dark"] .killer-info{background:#171717;color:#eeeeee}
 :root[data-theme="dark"] .killer-info.invalid{background:#342525;color:#f0b5ae}
-:root[data-theme="dark"] .cage-outline{border-color:#777777}
-:root[data-theme="dark"] .killer .cell .cage-sum{background:inherit;color:#d0d0d0}
-:root[data-theme="dark"] .cage-invalid .cage-outline{border-color:#ba827b}
-:root[data-theme="dark"] .killer .cage-invalid .cage-sum{color:#f0b5ae}
+:root[data-theme="dark"] .cage-outline{border-color:#a3a3a3}
+:root[data-theme="dark"] .killer .cell .cage-sum{background:inherit;color:#f0f0f0}
+:root[data-theme="dark"] .cage-invalid .cage-outline{border-color:#efa79a}
+:root[data-theme="dark"] .killer .cage-invalid .cage-sum{color:#ffc6bd}
 :root[data-theme="dark"] .cage-complete .cage-outline{border-color:#b7b7b7}
 :root[data-theme="dark"] .killer .cage-complete .cage-sum{color:#e0e0e0}
 @media(max-width:650px){.header-right{gap:12px}.theme-picker{gap:4px}.theme-picker select{font-size:10px;padding:6px 3px}.theme-picker>span{font-size:16px}}
@@ -69,7 +69,7 @@
 :root[data-theme="dark"] .play-panel{background:var(--paper)}
 
 :root[data-theme="dark"] :is(.eyebrow span,.board-bottom i,.progress>div){background:#858585}
-:root[data-theme="dark"] :is(button,a,select):focus-visible{outline-color:#999999}
+:root[data-theme="dark"] :is(button,a,select):focus-visible{outline-color:#f0f0f0}
 :root[data-theme="dark"] #toast{background:#242424;color:#ededed}
 
 /* Fixed icon boxes keep the timer and pause control optically aligned. */
