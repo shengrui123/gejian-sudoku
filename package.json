@@ -1,1 +1,12 @@
-{"name":"gejian-sudoku","version":"1.0.0","private":true,"type":"module","scripts":{"test":"node --test","dev":"node server.js","start":"node server.js"}}
+{
+  "name": "gejian-sudoku",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "dev": "node server.js",
+    "start": "node server.js",
+    "build": "node build.js"
+  }
+}

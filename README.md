@@ -18,6 +18,6 @@ npm run dev
 npm test
 ```
 
-開啟 http://localhost:3000 。在 Vercel 匯入此儲存庫，Framework Preset 選 Other，無需安裝或建置指令，輸出目錄為 `.`。
+開啟 http://localhost:3000 。在 Vercel 匯入此儲存庫，Framework Preset 選 Other，無需安裝依賴，建置指令為 `npm run build`，輸出目錄為 `dist`。
 
 難度依題目空格數區分；自動存檔保留最近一題，清除瀏覽器資料會移除進度。Google Fonts 無法載入時會自動使用系統字體。
