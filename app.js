@@ -110,7 +110,7 @@ function render() {
   $('#hint-count').textContent = state.hints; $('#note-state').textContent = notesMode ? '開' : '關';
   $('#notes').classList.toggle('active', notesMode); $('#notes').setAttribute('aria-pressed', String(notesMode));
   $$('[data-level]').forEach(b => b.classList.toggle('active', b.dataset.level === state.level));
-  $('#pause-overlay').hidden = !paused; $('#pause').textContent = paused ? '▶' : 'Ⅱ';
+  $('#pause-overlay').hidden = !paused; $('#pause').classList.toggle('is-paused', paused);
   $('#pause').setAttribute('aria-label', paused ? '繼續遊戲' : '暫停遊戲');
   $('#undo').disabled = !history.length || paused || state.won;
   $('#hint').disabled = !state.hints || paused || state.won;

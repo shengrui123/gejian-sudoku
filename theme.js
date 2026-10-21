@@ -13,7 +13,7 @@
     const dark = preference === 'dark' || preference === 'system' && system.matches;
     document.documentElement.dataset.theme = dark ? 'dark' : 'light';
     document.documentElement.style.colorScheme = dark ? 'dark' : 'light';
-    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', dark ? '#101010' : '#f7f8f4');
+    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', dark ? '#000000' : '#f7f8f4');
     const picker = document.querySelector('#theme-select');
     if (picker) picker.value = preference;
   }

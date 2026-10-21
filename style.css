@@ -24,39 +24,39 @@
 .theme-picker>span{font-size:18px;line-height:1}
 .theme-picker select{font:inherit;font-size:11px;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:7px 5px;cursor:pointer;max-width:110px}
 .theme-picker select:focus-visible{outline:3px solid #bd9c5c;outline-offset:3px}
-:root[data-theme="dark"]{--bg:#101010;--paper:#1a1a1a;--ink:#d3d3d3;--muted:#a0a0a0;--green:#383838;--line:#303030;--soft:#252525}
+:root[data-theme="dark"]{--bg:#000000;--paper:#0b0b0b;--ink:#d3d3d3;--muted:#a0a0a0;--green:#383838;--line:#303030;--soft:#252525}
 :root[data-theme="dark"] :is(.icon-button,.pause,.difficulty button,.mode-switch button,.mode-label,.game-meta,.board-bottom,.tools button,.tools button>span,.keyboard-tip,footer,footer button,.close,dialog p){color:var(--muted)}
 :root[data-theme="dark"] :is(.eyebrow,.edition,.edition span,.quote,.quote>span,.quote>div,.tiny-grid,.meta-dot){color:#929292}
 :root[data-theme="dark"] h1 em{color:#b8b8b8}
 :root[data-theme="dark"] :is(.icon-button,.edition){border-color:var(--line)}
-:root[data-theme="dark"] .difficulty{background:#121212}
+:root[data-theme="dark"] .difficulty{background:#080808}
 :root[data-theme="dark"] .difficulty button.active{background:#333333;color:#d0d0d0;box-shadow:none}
 :root[data-theme="dark"] #level-name{color:#b3b3b3}
 :root[data-theme="dark"] #board{background:#686868;border-color:#686868}
 :root[data-theme="dark"] .cell{background:var(--paper);border-color:#333333}
 :root[data-theme="dark"] .cell:nth-child(3n){border-right-color:#626262}
 :root[data-theme="dark"] .cell:nth-child(n+19):nth-child(-n+27),:root[data-theme="dark"] .cell:nth-child(n+46):nth-child(-n+54){border-bottom-color:#626262}
-:root[data-theme="dark"] .cell.related{background:#242424}
-:root[data-theme="dark"] .cell.same{background:#303030}
-:root[data-theme="dark"] .cell.selected{background:#3b3b3b;box-shadow:inset 0 0 0 2px #888888}
+:root[data-theme="dark"] .cell.related{background:#181818}
+:root[data-theme="dark"] .cell.same{background:#242424}
+:root[data-theme="dark"] .cell.selected{background:#303030;box-shadow:inset 0 0 0 2px #888888}
 :root[data-theme="dark"] .cell.user{color:#b8c8d6}
 :root[data-theme="dark"] .cell.error{color:#d8a09a;background:#342525}
 :root[data-theme="dark"] .cell .notes-grid{color:#a8a8a8}
 :root[data-theme="dark"] .progress{background:#292929}
 :root[data-theme="dark"] :is(.tools button.active,.mode-switch button.active){background:#333333;color:#d0d0d0}
 :root[data-theme="dark"] .tools small{background:#292929;border-color:#404040;color:#b0b0b0}
-:root[data-theme="dark"] .number{background:#252525;border-color:#363636;color:#c4c4c4}
+:root[data-theme="dark"] .number{background:#171717;border-color:#363636;color:#c4c4c4}
 :root[data-theme="dark"] .number small{color:#909090}
 :root[data-theme="dark"] .number:disabled{opacity:.45}
-:root[data-theme="dark"] .daily-card{background:#1d1d1d;border-color:#333333}
+:root[data-theme="dark"] .daily-card{background:#101010;border-color:#333333}
 :root[data-theme="dark"] :is(.daily-icon,.daily-card p,.tag,.arrow,.daily-footer){color:#a4a4a4}
 :root[data-theme="dark"] :is(.tag,.daily-footer){border-color:#383838}
-:root[data-theme="dark"] .pause-overlay{background:#222222;border-color:#686868}
+:root[data-theme="dark"] .pause-overlay{background:#101010;border-color:#686868}
 :root[data-theme="dark"] dialog{background:var(--paper)}
 :root[data-theme="dark"] dialog::backdrop{background:#000000b3}
 :root[data-theme="dark"] .secondary{background:#333333;color:var(--ink)}
 :root[data-theme="dark"] .win-symbol{color:#b0b0b0}
-:root[data-theme="dark"] .killer-info{background:#252525;color:#b5b5b5}
+:root[data-theme="dark"] .killer-info{background:#171717;color:#b5b5b5}
 :root[data-theme="dark"] .killer-info.invalid{background:#342525;color:#d8a09a}
 :root[data-theme="dark"] .cage-outline{border-color:#777777}
 :root[data-theme="dark"] .killer .cell .cage-sum{background:inherit;color:#b0b0b0}
@@ -70,4 +70,15 @@
 
 :root[data-theme="dark"] :is(.eyebrow span,.board-bottom i,.progress>div){background:#858585}
 :root[data-theme="dark"] :is(button,a,select):focus-visible{outline-color:#999999}
-:root[data-theme="dark"] #toast{background:#303030;color:#d3d3d3}
+:root[data-theme="dark"] #toast{background:#242424;color:#d3d3d3}
+
+/* Fixed icon boxes keep the timer and pause control optically aligned. */
+.timer{height:24px;gap:9px;line-height:1}
+.timer time{display:flex;align-items:center;height:24px;font-family:Arial,sans-serif;font-size:12px;line-height:1}
+.clock-icon{display:block;width:16px;height:16px;flex:none}
+.pause{display:flex;align-items:center;justify-content:center;width:24px;height:24px;padding:0;flex:none;line-height:1}
+.pause svg{display:block;width:16px;height:16px}
+.pause .resume-symbol{display:none}
+.pause.is-paused .pause-symbol{display:none}
+.pause.is-paused .resume-symbol{display:block}
+.game-meta>div:first-child{display:flex;align-items:center;min-height:24px}
